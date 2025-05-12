@@ -1,0 +1,32 @@
+{
+  "id": "lang-uk",
+  "title": "Translation: Ukrainian [Core]",
+  "version": "13.341.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13.341",
+    "maximum": "13"
+  },
+  "description": "Переклад інтерфейсу Foundry VTT українською мовою",
+  "authors": [
+    {
+      "name": "GMonline UA",
+      "discord": "vlad_dracula",
+      "email": "gmonlineua@gmail.com",
+      "url": "https://bsky.app/profile/gmonline-ua.bsky.social"
+    }
+  ],
+  "coreTranslation": true,
+  "languages": [
+    {
+      "lang": "uk",
+      "name": "Українська (Ukrainian)",
+      "path": "lang/uk.json"
+    }
+  ],
+  "url": "https://github.com/GMonlineua/foundryvtt-uk",
+  "readme": "https://github.com/GMonlineua/foundryvtt-uk/blob/main/README.md",
+  "license": "https://github.com/GMonlineua/foundryvtt-uk/blob/main/LICENSE.md",
+  "manifest": "https://raw.githubusercontent.com/GMonlineua/foundryvtt-uk/main/module.json",
+  "download": "https://github.com/GMonlineua/foundryvtt-uk/releases/download/v13.341/foundry.zip"
+}
