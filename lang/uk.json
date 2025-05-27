@@ -434,9 +434,9 @@
       "face.label": "Лицева сторона",
       "faces": {
       "element": {
-        "name.label": "Face Name",
-        "img.label": "Face Image",
-        "text.label": "Face Text"
+        "name.label": "Лицьова назва",
+        "img.label": "Лицьове зображення",
+        "text.label": "Лицьовий текст"
       }
       },
       "back": {
@@ -612,8 +612,8 @@
   "COMPENDIUM.ToggleLocked": {
     "Option": "Перемкнути блокування редагування",
     "Title": "Перемкнути блокування редагування: {compendium}",
-    "Unlock": "Unlock",
-    "Warning": "You are attempting to unlock for editing a compendium that does not belong to this World. Any changes you make in this compendium pack may be lost if the System or Module which owns it is updated. You may wish to duplicate the compendium to your World instead. How do you wish to proceed?"
+    "Unlock": "Розблокувати",
+    "Warning": "Ви намагаєтеся розблокувати для редагування збірник, що не належить до цього світу. Будь-які зміни, внесені вами до цього компендіуму, можуть бути втрачені при оновленні системи або модуля, якому він належить. Натомість ви можете скопіювати компендіум для вашого світу. Бажаєте продовжити?"
   },
   "COMPENDIUM.CannotViewWarning": "У вас недостатньо прав для перегляду цього пакунка збірника.",
   "COMPENDIUM.OwnershipInheritBelow": "Успадкувати знизу",
@@ -769,8 +769,8 @@
     "Click": "Клац",
     "ClickDrag": "Клац + Перетягнути",
     "ClickOrClickDrag": "<span class=\"reference\">Клац</span> або <span class=\"reference\">Клац + Перетягнути</span>",
-    "Control": "Control",
-    "Ctrl": "Control",
+    "Control": "Управління",
+    "Ctrl": "Управління",
     "CtrlAbbr": "CTRL",
     "CtrlClickDrag": "{mod} + Клац + Перетягнути",
     "Alt": "Alt",
@@ -785,7 +785,7 @@
     "ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + Прокрутка</span> або <span class=\"reference\">{mod} + Прокрутка</span>",
     "ShiftDrag": "SHIFT + Перетягнути",
     "Spacebar": "ПРОБІЛ",
-    "Delete": "DELETE",
+    "Delete": "ВИДАЛИТИ",
     "Drag": "Перетягнути",
     "Drop": "Відпустити",
     "KeyHighlight": "Виділити об'єкти полотна",
@@ -801,8 +801,8 @@
     "KeyPaste": "Вставити елементи полотна",
     "KeyUndo": "Скасувати операцію на полотні",
     "KeyHotbar": "Активувати слот панелі швидкого доступу",
-    "RulerPlaceWaypoint": "Place Ruler Waypoint",
-    "RulerRemoveWaypoint": "Remove Ruler Waypoint",
+    "RulerPlaceWaypoint": "Розмістити контрольну точку лінійки",
+    "RulerRemoveWaypoint": "Видалити контрольну точку лінійки",
     "ObjectSheet": "Відкрити аркуш пов'язаного об'єкта",
     "ObjectHUD": "Показати HUD об'єкта (якщо застосовно)",
     "ObjectConfig": "Відкрити аркуш налаштувань об'єкта",
@@ -814,7 +814,7 @@
     "MouseWheel": "Коліщатко миші",
     "DragDrop": "Перетягнути та відпустити",
     "UnconstrainedMovement": "Необмежений рух",
-    "UnconstrainedMovementP": "When active, you can move Tokens through Walls and impassible terrain.",
+    "UnconstrainedMovementP": "Коли активно, можна переміщувати токени через стіни та складний рельєф.",
     "TokenHeader": "Керування токеном",
     "TokenPlaceHidden": "Розмістити прихований токен",
     "TokenTarget": "Встановити (не свій) токен як ціль",
@@ -961,7 +961,7 @@
     "Users": "Користувачі",
     "Wall": "Стіна",
     "Walls": "Стіни",
-    "TypePageFormat": "{type} {page}",
+    "TypePageFormat": "{type}{page}",
     "FIELDS": {
       "name.label": "Назва",
       "type.label": "Тип",
@@ -1116,9 +1116,9 @@
     "RequiresGenerationReinstall": "Foundry Virtual Tabletop версії {version} тепер доступна, але не може бути встановлена з програми Foundry Virtual Tabletop, оскільки це оновлення нового покоління, яке має бути встановлено вручну шляхом повторного встановлення програмного забезпечення з вебсайту <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RequiresElectronReinstall": "Foundry Virtual Tabletop версії {version} тепер доступна, але не може бути встановлена з програми Foundry Virtual Tabletop, оскільки вона включає нову версію Electron, яку можна встановити лише вручну шляхом повторного встановлення програмного забезпечення з вебсайту <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RESOLUTION": {
-      "Screen": "Foundry Virtual Tabletop requires a screen resolution of {reqWidth}px by {reqHeight}px or greater. Your display has a resolution of {curWidth}px by {curHeight}px. You must increase your resolution or use a different display device, or else some features of the software will not work properly.",
-      "Scale": "Foundry Virtual Tabletop requires a usable window dimensions of {reqWidth}px by {reqHeight}px or greater. The current dimensions of this window are {curWidth}px by {curHeight}px. You currently have a zoom factor applied either at the operating system or browser level, which is reducing the effective size of your window. You must enlarge the size of your window or reduce the zoom factor applied to your browser, or else some features of the software will not work properly.",
-      "Window": "Foundry Virtual Tabletop requires usable window dimensions of {reqWidth}px by {reqHeight}px or greater. The current dimensions of this window are {curWidth}px by {curHeight}px. You must enlarge the size of your window, or else some features of the software will not work properly."
+      "Screen": "Foundry Virtual Tabletop вимагає розмір вікна {reqWidth}px на {reqHeight}px або більше. Поточні розміри цього вікна становлять {curWidth}px на {curHeight}px. Ви повинні збільшити розмір вікна, інакше деякі функції програмного забезпечення не працюватимуть належним чином.",
+      "Scale": "Foundry Virtual Tabletop вимагає вікно з корисними розмірами {reqWidth}px на {reqHeight}px або більше. Поточні розміри цього вікна становлять {curWidth}px на {curHeight}px. Наразі у вас застосовано коефіцієнт масштабування на рівні операційної системи або браузера, що зменшує ефективний розмір вашого вікна. Ви повинні збільшити розмір вікна або зменшити коефіцієнт масштабування, застосований до вашого браузера, інакше деякі функції програмного забезпечення не працюватимуть належним чином.",
+      "Window": "Foundry Virtual Tabletop вимагає вікно з корисними розмірами {reqWidth}px на {reqHeight}px або більше. Поточні розміри цього вікна становлять {curWidth}px на {curHeight}px. Ви повинні збільшити розмір вікна, інакше деякі функції програмного забезпечення не працюватимуть належним чином."
     }
   },
   "WARNING.GridConfigNoBG": "Ви використовуєте інструмент налаштування сітки для сцени без фонового зображення. Наразі це не рекомендується і може призвести до непередбачуваних результатів.",
@@ -1241,7 +1241,7 @@
     "TraverseBack": "Повернутися назад",
     "NoResults": "Відповідних результатів не знайдено в цьому місці.",
     "Upload": "Завантажити",
-    "CannotUpload": "Uploads to this directory are not permitted.",
+    "CannotUpload": "Завантаження до цього каталогу не допускається.",
     "Search": "Пошук",
     "ErrorTooLarge": "Файл, який ви намагалися завантажити, занадто великий для обробки вашим проксі-сервером.",
     "ErrorSomethingWrong": "Щось пішло не так із вашим запитом на завантаження файлу.",
@@ -1360,7 +1360,7 @@
   "JOURNAL.ConfigureCategoriesTitle": "Категорії {name}",
   "JOURNAL.CategoryName": "Назва категорії",
   "JOURNAL.Uncategorized": "Без категорії",
-  "JOURNAL.UnnamedCategory": "<Unnamed Category>",
+  "JOURNAL.UnnamedCategory": "<Невідома категорія>",
   "JOURNALENTRYPAGE.DefaultPageSheet": "Усталений аркуш сторінки {page}",
   "JOURNALENTRYPAGE.Format": "Формат",
   "JOURNALENTRYPAGE.Page": "Сторінка",
@@ -1992,10 +1992,10 @@
       "label": "Усталена мова",
       "hint": "Ви можете вибрати усталену мову для програми, обравши модуль, який надає файли основного перекладу для цієї мови."
       },
-      "upnp.label": "Enable UPnP",
+      "upnp.label": "Увімкнути UPnP",
       "port": {
       "label": "Порт",
-      "hint": "Choose which port Foundry Virtual Tabletop uses for TCP connection traffic and enable or disable Universal Plug and Play (UPnP)."
+      "hint": "Оберіть, який порт Foundry Virtual Tabletop використовує для трафіку TCP-з'єднань, та увімкніть або вимкніть Universal Plug and Play (UPnP)."
       },
       "compressStatic": {
       "label": "Стискати статичні файли",
@@ -2378,7 +2378,7 @@
     "WorldCoreMigrationRequired": "<p>Запуск світу <strong>{world}</strong> перенесе його модель даних зі старої версії основного програмного забезпечення (<code>{oldVersion}</code>) на поточну встановлену <strong>{newVersion}</strong>.</p>",
     "WorldSystemMigrationRequired": "<p>Цей світ востаннє запускався зі старішою версією системи (<code>{oldVersion}</code>), ніж поточно встановлена версія системи <strong>{newVersion}</strong>, і може потребувати міграції системи.</p>",
     "WorldMigrationSystemUnavailable": "<p>Встановлена версія ігрової системи <strong>{system}</strong> (<code>{systemVersion}</code>) не підтверджена як сумісна з цією версією програмного забезпечення. Успішна міграція не може бути гарантована.</p>",
-    "WorldMigrationDisableModules": "<p>Be sure to update your game system and installed modules before migrating your World. As part of this migration to a new software generation all modules and active scenes will be disabled and any playing audio will be stopped. You may re-enable these modules after the migration is complete.</p>",
+    "WorldMigrationDisableModules": "<p>Обов'язково оновіть свою ігрову систему та встановлені модулі перед міграцією світу. У рамках цієї міграції на нову версію програмного забезпечення всі модулі та активні сцени буде вимкнено, а відтворення будь-якого аудіо – зупинено. Ви зможете повторно увімкнути ці модулі після завершення міграції.</p>",
     "WorldMigrationBackupPrompt": "<p><strong>Скасувати цей процес неможливо.</strong> Рекомендується створити резервну копію даних вашого світу перед тим, як продовжити. Вам знадобиться резервна копія для відновлення попередньої версії.</p>",
     "WorldMigrationCreateBackup": "Створити резервну копію перед міграцією?",
     "WorldMigrationBegin": "Почати міграцію",
@@ -2501,13 +2501,13 @@
     },
     "INSTALL_PACKAGE": {
       "ManifestIncompatible": {
-      "Title": "Compatibility Warning",
+      "Title": "Попередження щодо сумісності",
       "Warning": [
-        "The {packageType} at the provided URL is not compatible with the current version of Foundry Virtual Tabletop.",
-        "Are you sure you wish to proceed with the installation?"
+        "{packageType} за вказаним URL несумісний з поточною версією Foundry Virtual Tabletop.",
+        "Ви дійсно бажаєте продовжити встановлення?"
       ]
       },
-      "ManifestWrongPackageType": "The provided URL does not appear to point to a {packageType}."
+      "ManifestWrongPackageType": "Указаний URL не вказує на {packageType}."
     },
     "UPDATE_NOTES": {
       "Title": "Нотатки релізу: {release}",
@@ -2620,24 +2620,24 @@
       },
       "authors": {
       "element": {
-        "name.label": "Author Name",
-        "discord.label": "Discord Username",
-        "email.label": "Email Address",
-        "url.label": "Website URL"
+        "name.label": "Ім’я автора",
+        "discord.label": "Ім’я користувача у Discord",
+        "email.label": "Адреса ел. пошти",
+        "url.label": "Посилання на сайт"
       }
       },
       "packs": {
       "element": {
         "name": {
-        "label": "Name",
-        "hint": "A unique alphanumeric string with no special characters that identifies the compendium pack.",
-        "disabledHint": "You cannot change this compendium pack name because it already exists."
+        "label": "Назва",
+        "hint": "Унікальна алфавітно-цифрова назва без спеціальних символів, що ідентифікує збірник.",
+        "disabledHint": "Ви не можете змінити назву цього збірника, тому що він вже створений."
         },
-        "label.label": "Label",
-        "type.label": "Document Type",
+        "label.label": "Мітка",
+        "type.label": "Тип документа",
         "system": {
-        "label": "Required System",
-        "hint": "Actor, Item, or Adventure compendium packs (which contain Actors or Items) must declare which specific game system they are designed for."
+        "label": "Необхідна cистема",
+        "hint": "Збірники акторів, елементів або пригод (які містять акторів або елементи) повинні вказувати, для якої конкретної ігрової системи вони розроблені."
         }
       }
       },
@@ -2676,9 +2676,9 @@
     "LoginSuccess": "Вхід як {user} успішний, приєднуємося до гри!"
   },
   "SHEETS.ConfigureSheet": "Налаштування Аркуша",
-  "SHEETS.ConfigureTitle": "{prefix}: Sheet Configuration",
+  "SHEETS.ConfigureTitle": "{prefix}: Конфігурація аркуша",
   "SHEETS.ThisSheet": "Цей Аркуш",
-  "SHEETS.Defaults": "Defaults",
+  "SHEETS.Defaults": "Усталено",
   "SHEETS.DefaultSheet": "Усталений Аркуш",
   "SHEETS.DefaultDocumentSheet": "Усталений Аркуш {document}",
   "SHEETS.DocumentSheetHint": "Визначте, який тип аркуша ви хотіли б використовувати для цього документу.",
@@ -2687,8 +2687,8 @@
   "SHEETS.Save": "Зберегти Конфігурацію Аркуша",
   "SHEETS.FormNavLabel": "Навігація Вкладок Форми",
   "SHEETS.CopyUuid": "Копіювати UUID Документа",
-  "SHEETS.Theme": "Theme",
-  "SHEETS.ThemeHint": "Not all themes are available for each sheet.",
+  "SHEETS.Theme": "Тема",
+  "SHEETS.ThemeHint": "Не всі теми доступні для кожної аркуша.",
   "SOUND": {
     "ConfigTitle": "Конфігурація звуку оточення",
     "PathPlaceholder": "шлях/до/аудіо.mp3",
@@ -2702,12 +2702,12 @@
   "FOLDER.Clear": "Очистити Теку",
   "FOLDER.Collapse": "Згорнути Всі Теки",
   "FOLDER.Delete": "Видалити Всі",
-  "FOLDER.DeleteName": "Delete All: {name}",
+  "FOLDER.DeleteName": "Видалити всі: {name}",
   "FOLDER.DeleteWarning": "Ця тека і її вміст буде остаточно видалені, її неможливо буде відновити.",
   "FOLDER.Edit": "Редагувати Теку",
   "FOLDER.Export": "Експорт до Збірника",
   "FOLDER.Remove": "Видалити Теку",
-  "FOLDER.RemoveName": "Remove Folder: {name}",
+  "FOLDER.RemoveName": "Вилучити теку: {name}",
   "FOLDER.RemoveWarning": "Цю теку буде остаточно видалено, а її вміст буде перенесено до батьківської теки.",
   "FOLDER.SortAlphabetical": "За Алфавітом",
   "FOLDER.SortManual": "Вручну",
@@ -2726,15 +2726,15 @@
   "FOLDER.ExportDone": "Завершено експорт {type} в Збірник {compendium}.",
   "FOLDER.CreateTable": "Створити Таблицю Кидків",
   "FOLDER.CreateTableConfirm": {
-    "Title": "Create Rollable Table: {folder}",
-    "Question": "Create a new Rollable Table document using the contents of this Folder as table results?"
+    "Title": "Створити таблицю кидків: {folder}",
+    "Question": "Створити нову таблицю кидків використовуючи вміст цієї теки як результати?"
   },
   "FOLDER.InvalidDocumentType": "Неправильний тип Документа \"{type}\" для цієї Теки.",
   "FOLDER.ExceededMaxDepth": "Ви не можете вкладати теки глибиною більше, ніж {depth} рівнів.",
   "FOLDER.FIELDS": {
-    "name.label": "Folder Name",
-    "color.label": "Folder Color",
-    "sorting.label": "Sorting Mode"
+    "name.label": "Назва теки",
+    "color.label": "Колір теки",
+    "sorting.label": "Режим сортування"
   },
   "OWNERSHIP": {
     "Title": "Конфігурація власності: {object}",
@@ -2808,8 +2808,8 @@
   "PERMISSION.TokenConfigureHint": "Дозволити користувачам з цією роллю налаштовувати параметри Токенів, якими вони володіють.",
   "PERMISSION.WallDoors": "Відчинити та Зачинити Двері",
   "PERMISSION.WallDoorsHint": "Дозволити користувачам з цією роллю взаємодіяти з дверима, визначеними на Шарі Стін.",
-  "PERMISSION.QueryUser": "Query Users",
-  "PERMISSION.QueryUserHint": "Allow users with this role to query other users.",
+  "PERMISSION.QueryUser": "Запит до користувачів",
+  "PERMISSION.QueryUserHint": "Дозволити користувачам з цією роллю робити запити до інших користувачів.",
   "PERMISSION.WarningNoCreate": "У вас недостатньо прав для створення {document}.",
   "REGION": {
     "TABS": {
@@ -3532,15 +3532,15 @@
   "TOKEN.DISPLAY_HOVER": "При Наведенні Будь-Ким",
   "TOKEN.DISPLAY_OWNER": "Завжди для Власника",
   "TOKEN.DISPLAY_ALWAYS": "Завжди для Всіх",
-  "TOKEN.SHAPES.ELLIPSE.label": "Ellipse",
-  "TOKEN.SHAPES.ELLIPSE_1.label": "Ellipse (Variant 1)",
-  "TOKEN.SHAPES.ELLIPSE_2.label": "Ellipse (Variant 2)",
-  "TOKEN.SHAPES.TRAPEZOID.label": "Trapezoid",
-  "TOKEN.SHAPES.TRAPEZOID_1.label": "Trapezoid (Variant 1)",
-  "TOKEN.SHAPES.TRAPEZOID_2.label": "Trapezoid (Variant 2)",
-  "TOKEN.SHAPES.RECTANGLE.label": "Rectangle",
-  "TOKEN.SHAPES.RECTANGLE_1.label": "Rectangle (Variant 1)",
-  "TOKEN.SHAPES.RECTANGLE_2.label": "Rectangle (Variant 2)",
+  "TOKEN.SHAPES.ELLIPSE.label": "Еліпс",
+  "TOKEN.SHAPES.ELLIPSE_1.label": "Еліпс (варіант 1)",
+  "TOKEN.SHAPES.ELLIPSE_2.label": "Еліпс (варіант 2)",
+  "TOKEN.SHAPES.TRAPEZOID.label": "Трапеція",
+  "TOKEN.SHAPES.TRAPEZOID_1.label": "Трапеція (варіант 1)",
+  "TOKEN.SHAPES.TRAPEZOID_2.label": "Трапеція (варіант 2)",
+  "TOKEN.SHAPES.RECTANGLE.label": "Прямокутник",
+  "TOKEN.SHAPES.RECTANGLE_1.label": "Прямокутник (варіант 1)",
+  "TOKEN.SHAPES.RECTANGLE_2.label": "Прямокутник (варіант 2)",
   "TOKEN.Adjectives.ambitious": "Амбітний",
   "TOKEN.Adjectives.angry": "Сердитий",
   "TOKEN.Adjectives.annoyed": "Роздратований",
@@ -3654,7 +3654,7 @@
       "RING_GRADIENT": "Градієнт Кільця",
       "RING_PULSE": "Пульсація Кільця",
       "INVISIBILITY": "Спектральна Пульсація",
-      "COLOR_OVER_SUBJECT": "Color Over Subject"
+      "COLOR_OVER_SUBJECT": "Колір поверх об'єкта"
     },
     "SHEET": {
       "legend": "Динамічне Кільце Токену"
@@ -3674,25 +3674,25 @@
   },
   "TOKEN.TURNMARKER": {
     "SHEET": {
-      "legend": "Combat Turn Marker"
+      "legend": "Маркер ходу в бою"
     },
     "MODES": {
-      "DISABLED": "Disabled",
-      "DEFAULT": "Default",
-      "CUSTOM": "Custom"
+      "DISABLED": "Вимкнено",
+      "DEFAULT": "Усталений",
+      "CUSTOM": "Власна"
     }
   },
   "TOKEN.MOVEMENT": {
     "ACTIONS": {
-      "blink.label": "Teleport (Blink)",
-      "burrow.label": "Burrow",
-      "climb.label": "Climb",
-      "crawl.label": "Crawl",
-      "displace.label": "Teleport (Displace)",
-      "jump.label": "Jump",
-      "fly.label": "Fly",
-      "swim.label": "Swim",
-      "walk.label": "Walk"
+      "blink.label": "Телепорт (Миттю)",
+      "burrow.label": "Копання",
+      "climb.label": "Лазіння",
+      "crawl.label": "Повзання",
+      "displace.label": "Телепорт (Переміщення)",
+      "jump.label": "Стрибки",
+      "fly.label": "Політ",
+      "swim.label": "Плавання",
+      "walk.label": "Ходьба"
     }
   },
   "TYPES": {
