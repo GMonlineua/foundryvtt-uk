@@ -1,7 +1,7 @@
 {
   "id": "lang-uk",
   "title": "Translation: Ukrainian [Core]",
-  "version": "13.344.0",
+  "version": "13.344",
   "compatibility": {
     "minimum": "13",
     "verified": "13.344",
@@ -28,5 +28,5 @@
   "readme": "https://github.com/GMonlineua/foundryvtt-uk/blob/main/README.md",
   "license": "https://github.com/GMonlineua/foundryvtt-uk/blob/main/LICENSE.md",
   "manifest": "https://raw.githubusercontent.com/GMonlineua/foundryvtt-uk/main/module.json",
-  "download": "https://github.com/GMonlineua/foundryvtt-ua/releases/download/v13.344/foundry.zip"
+  "download": "https://github.com/GMonlineua/foundryvtt-uk/releases/download/v13.344/foundry.zip"
 }

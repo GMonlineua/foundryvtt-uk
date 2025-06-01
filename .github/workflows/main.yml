@@ -25,12 +25,12 @@ jobs:
 
       - name: Update Download Link
         run: |
-          jq '.download = "https://github.com/GMonlineua/foundryvtt-ua/releases/download/v${{ env.RELEASE_VERSION }}/foundry.zip"' module.json > tmp.json && mv tmp.json module.json
+          jq '.download = "https://github.com/GMonlineua/foundryvtt-uk/releases/download/v${{ env.RELEASE_VERSION }}/foundry.zip"' module.json > tmp.json && mv tmp.json module.json
 
       - name: Update Readme
         run: |
           PACKAGE="https://img.shields.io/badge/Version-${{ env.BUILD_VERSION }}-informational?style=flat-square"
-          PACKAGE_LINK="https://github.com/GMonlineua/foundryvtt-ua/releases/tag/v${{ env.RELEASE_VERSION }}"
+          PACKAGE_LINK="https://github.com/GMonlineua/foundryvtt-uk/releases/tag/v${{ env.RELEASE_VERSION }}"
           FOUNDRY="https://img.shields.io/badge/Foundry-${{ env.RELEASE_VERSION }}-orange?style=flat-square"
           sed -i "s|\[Version\]:.*|\[Version\]: $PACKAGE|" README.md
           sed -i "s|\[Foundry\]:.*|\[Foundry\]: $FOUNDRY|" README.md
