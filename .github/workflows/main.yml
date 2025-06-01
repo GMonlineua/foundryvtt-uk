@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'module.json'
-
+      - "module.json"
 
 jobs:
   build:
@@ -50,7 +49,7 @@ jobs:
 
       - name: Create Zip Archive
         run: |
-          zip -r foundry.zip module.json lang/uk.json
+          zip -r foundry.zip module.json LICENSE.md README.md lang/uk.json
 
       - name: Create Release
         id: create_release

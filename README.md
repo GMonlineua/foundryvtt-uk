@@ -29,10 +29,10 @@
  - [Локалізація PF 2e](https://foundryvtt.com/packages/pfe2ukua)
  - [Локалізація D&D5e](https://foundryvtt.com/packages/lang-uk-dnd5e)
 
-[Foundry]: https://img.shields.io/badge/Foundry-13.341-orange?style=flat-square
+[Foundry]: https://img.shields.io/badge/Foundry-13.344-orange?style=flat-square
 [Foundry URL]: https://foundryvtt.com
 
-[Version]: https://img.shields.io/badge/Version-13.341.0-informational?style=flat-square
+[Version]: https://img.shields.io/badge/Version-13.344.0-informational?style=flat-square
 [VersionURL]: https://github.com/GMonlineua/foundryvtt-ua/releases/tag/v13.341
 
 [License]: https://img.shields.io/badge/License-MIT-green?style=flat-square
