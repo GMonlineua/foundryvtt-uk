@@ -814,7 +814,7 @@
     "MouseWheel": "Коліщатко миші",
     "DragDrop": "Перетягнути та відпустити",
     "UnconstrainedMovement": "Необмежений рух",
-    "UnconstrainedMovementP": "When active, you can move Tokens through Walls and impassable terrain.",
+    "UnconstrainedMovementP": "Коли активно, можна переміщувати токени через стіни та складний рельєф.",
     "TokenHeader": "Керування токеном",
     "TokenPlaceHidden": "Розмістити прихований токен",
     "TokenTarget": "Встановити (не свій) токен як ціль",
@@ -860,8 +860,8 @@
     "ObjectConfigured": "Неможливо виконати цю дію під час налаштування іншого об'єкта."
   },
   "DICE": {
-    "ErrorNonNumeric": "The dice roll formula \"{formula}\" did not produce a numeric outcome.",
-    "ErrorNotParsable": "The dice roll formula \"{formula}\" is not a string.",
+    "ErrorNonNumeric": "Формула кидка кубиків \"{formula}\" не дала числового результату.",
+    "ErrorNotParsable": "Формула кидання \"{formula}\" не є рядком.",
     "ManualRoll": "Ручний кидок",
     "RollResolution": "Вирішення кидка",
     "SubmitRoll": "Підтвердити кидок",
@@ -1032,8 +1032,8 @@
   "EFFECT.MODE_OVERRIDE": "Перезаписати",
   "EFFECT.TransferLegacy": "Передати ефект актору",
   "EFFECT.TransferHintLegacy": "Якщо позначено, цей ефект буде скопійовано до актора, коли елемент-батько цього ефекту буде створено на акторі, і видалено, якщо цей елемент колись буде видалено.",
-  "EFFECT.DurationTurns": "Effect Duration (Combat)",
-  "EFFECT.StartTurns": "Effect Start",
+  "EFFECT.DurationTurns": "Тривалість ефекту (Бій)",
+  "EFFECT.StartTurns": "Початок ефекту",
   "EFFECT.ChangeKey": "Ключ атрибута",
   "EFFECT.ChangeMode": "Режим зміни",
   "EFFECT.ChangeValue": "Значення",
@@ -1216,10 +1216,10 @@
     }
   },
   "FILES": {
-    "CreateDirectory": "Create Folder",
+    "CreateDirectory": "Створити теку",
     "CreateSubfolder": "Створити підтеку",
     "DirectoryName": {
-      "Label": "Folder Name",
+      "Label": "Назва теки",
       "Placeholder": "мій-каталог"
     },
     "TogglePrivacy": "Перемкнути режим конфіденційності",
@@ -1231,25 +1231,25 @@
     "FavoritesLabel": "Обране",
     "AddFavorite": "Додати поточну теку до обраного",
     "RemoveFavorite": "Видалити теку з обраного",
-    "DirectoryPathLabel": "Folder Path",
+    "DirectoryPathLabel": "Шлях до теки",
     "FilterLabel": "Фільтрувати результати",
     "S3Label": "S3 Bucket",
     "Selected": "Вибрано",
     "SelectFile": "Вибрати файл",
-    "SelectFolder": "Select Folder",
+    "SelectFolder": "Вибрати теку",
     "TileSize": "Розмір сітки ресурсів",
     "TileSizeHint": "Вкажіть розмір сітки в пікселях для вихідних зображень тайлів, щоб вони автоматично змінювали розмір при розміщенні на активній сцені.",
     "TraverseBack": "Повернутися назад",
     "NoResults": "Відповідних результатів не знайдено в цьому місці.",
     "Upload": "Завантажити",
-    "CannotUpload": "Uploads to this folder are prohibited because content here may be overwritten during updates. Upload to your \"assets\" folder or another allowed location instead.",
+    "CannotUpload": "Завантаження до цієї теки заборонено, так як вміст тут може бути переписано під час оновлення. Замість цього завантажте до теки \"assets\" або іншого дозволеного розташування.",
     "Search": "Пошук",
     "ErrorTooLarge": "Файл, який ви намагалися завантажити, занадто великий для обробки вашим проксі-сервером.",
     "ErrorSomethingWrong": "Щось пішло не так із вашим запитом на завантаження файлу.",
-    "WarnUploadModules": "You have uploaded files into a module or system folder. This is generally <strong>unsafe</strong> because updates to the system or module will delete your files.",
+    "WarnUploadModules": "Ви завантажили файли до теки модуля або системи. Як правило, це <strong>небезпечно</strong>, оскільки оновлення системи або модуля видалять ваші файли.",
     "AlreadyFavorited": "{path} вже у вашому обраному.",
     "TitleAny": "Файловий браузер",
-    "TitleFolder": "Folder Browser",
+    "TitleFolder": "Огляд тек",
     "TitleFont": "Браузер шрифтів",
     "TitleImageVideo": "Браузер зображень або відео",
     "TitleImage": "Браузер зображень",
@@ -1963,9 +1963,9 @@
       "no": "Відхилити обмін"
     },
     "ChangePassword": {
-      "label": "Change Password",
-      "hint": "Enter the existing administrator password.",
-      "title": "Enter Existing Password"
+      "label": "Змінити пароль",
+      "hint": "Введіть існуючий пароль адміністратора.",
+      "title": "Введіть існуючий пароль"
     },
     "SECTIONS": {
       "FVTTConfig": "Налаштування Foundry VTT",
@@ -2021,12 +2021,12 @@
       },
       "sslCert": {
       "label": "Сертифікат",
-      "hint": "You may run the server using secure socket layer (SSL) encryption by providing paths to certificate and key files. Paths are absolute or relative to the Config subfolder in user data."
+      "hint": "Ви можете запустити сервер з використанням шифрування SSL (Secure Socket Layer), надавши шляхи до файлів сертифіката та ключа. Шляхи є абсолютними або відносними до підкаталогу Config у даних користувача."
       },
       "sslKey.label": "Ключ",
       "awsConfig": {
       "label": "Шлях до конфігурації AWS",
-      "hint": "You may provide an AWS configuration file for S3 integration. The path is absolute or relative to the Config subfolder of user data."
+      "hint": "Ви можете надати файл конфігурації AWS для інтеграції з S3. Шлях є абсолютним або відносним до підкаталогу Config даних користувача."
       },
       "fullscreen": {
       "label": "Повноекранний режим",
@@ -2132,8 +2132,8 @@
   "SETTINGS.GridDiagonalsAlternating1": "Чергування (1/2/1)",
   "SETTINGS.GridDiagonalsAlternating2": "Чергування (2/1/2)",
   "SETTINGS.GridDiagonalsIllegal": "Заборонені (∞)",
-  "SETTINGS.UniversalKeybindingsN": "Universal Keybindings (experimental)",
-  "SETTINGS.UniversalKeybindingsL": "Match shortcuts by the character you type instead of the physical key position. Improves support for AZERTY, QWERTZ, Kana and other layouts. This is an experimental feature. A reload is required.",
+  "SETTINGS.UniversalKeybindingsN": "Універсальні ключі (експериментальне)",
+  "SETTINGS.UniversalKeybindingsL": "Встановіть відповідність клавіш за символом, який ви вводите, а не фізична позиція ключа. Покращує підтримку AZERTY, QWERTZ та інших макетів. Це експериментальна функція.",
   "SETTINGS.UI": {
     "MENU": {
       "name": "Налаштування інтерфейсу користувача",
@@ -2380,8 +2380,8 @@
     "UpdateLicenseInvalid": "Ваш ліцензійний ключ Foundry Virtual Tabletop недійсний.",
     "UpdatedPackages": "Журнал оновлень пакунків",
     "NoUpdateMode": {
-      "Label": "Updates Disabled",
-      "Hint": "You are not allowed to update this instance of Foundry Virtual Tabletop because it was launched in --noupdate mode."
+      "Label": "Оновлення відключено",
+      "Hint": "Вам не дозволено оновлювати цей екземпляр Foundry Virtual Tabletop, оскільки він був запущений у режимі --noupdate."
     },
     "Package": "Пакунок",
     "VersionChange": "Зміна версії",
@@ -2525,7 +2525,7 @@
       "FullList": "Дивіться <a href=\"{url}\" target=\"_blank\">повний список</a> нотаток релізу.",
       "BeginDownload": "Почати завантаження",
       "NewGenerationHint": "Розгляньте можливість створення знімка всіх встановлених пакунків перед оновленням на випадок, якщо вам потрібно буде відкотитися.",
-      "PreviewCompatibilityHint": "Using the \"Preview Compatibility\" button below, you can check if all your Worlds, Systems, and Modules are supported in Foundry Virtual Tabletop Version {version}."
+      "PreviewCompatibilityHint": "Використовуючи кнопку 'переглянути сумісність' нижче, ви можете перевірити, чи всі ваші світи, системи та модулі підтримуються у Foundry Virtual Tabletop версії {version}."
     }
   },
   "THEME.foundry": "Foundry Virtual Tabletop",
