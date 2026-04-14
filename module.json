@@ -1,11 +1,11 @@
 {
   "id": "lang-uk",
   "title": "Translation: Ukrainian [Core]",
-  "version": "13.344",
+  "version": "13.351",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.344",
-    "maximum": "13"
+    "verified": "13.351",
+    "maximum": "14"
   },
   "description": "Переклад інтерфейсу Foundry VTT українською мовою",
   "authors": [
