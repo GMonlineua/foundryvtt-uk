@@ -1,5 +1,4 @@
 {
-"Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
 "ADVENTURE": {
   "ImportSubmit": "Import Adventure",
   "ImportProgress": "Importing",
@@ -402,21 +401,19 @@
 
 "COMBAT": {
   "NavLabel": "Combat Encounters Navigation",
-  "Begin": "Begin Encounter",
-  "Create": "Create Encounter",
-  "Delete": "Delete Encounter",
-  "Encounter": "Encounter",
-  "EncounterPrevious": "Activate Previous Encounter",
-  "EncounterNext": "Activate Next Encounter",
-  "End": "End Encounter",
+  "Begin": "Start Combat",
+  "Create": "Create Combat",
+  "EncounterPrevious": "Activate Previous Combat",
+  "EncounterNext": "Activate Next Combat",
+  "End": "End Combat",
   "InitiativeRoll": "Roll Initiative",
   "InitiativeReset": "Reset Initiative",
   "ClearMovementHistories": "Clear Movement Histories",
-  "EndTitle": "End Encounter?",
-  "EndConfirmation": "End this encounter and empty the turn tracker?",
-  "None": "No Encounter",
+  "EndTitle": "End Combat",
+  "EndConfirmation": "End this combat and empty the turn tracker?",
+  "None": "No Combat",
   "NoneActive": "There is no active Combat Encounter in your currently viewed Scene.",
-  "NoneRemaining": "There are no Combatants remaining in this Encounter that are not defeated.",
+  "NoneRemaining": "There are no Combatants remaining in this Combat Encounter that are not defeated.",
   "NotStarted": "Not Started",
   "Round": "Round {round}",
   "Rounds": "Rounds",
@@ -425,9 +422,9 @@
   "RollNPC": "Roll NPCs",
   "RollAll": "Roll All",
   "RollsInitiative": "{name} rolls for Initiative!",
-  "Settings": "Encounter Tracker Settings",
+  "Settings": "Combat Tracker Settings",
   "SettingsSave": "Save Tracker Settings",
-  "SidebarTitle": "Encounter Tracker",
+  "SidebarTitle": "Combat Tracker",
   "Sounds": {
     "Epic": "Epic",
     "MC": "Fight Commentator"
@@ -437,12 +434,18 @@
   "TurnEnd": "End Turn",
   "TurnNext": "Next Turn",
   "TurnPrev": "Previous Turn",
-  "CannotLinkToScene": "You cannot link the Combat to a Scene that doesn't contain all its Combatants.",
+  "CannotLinkToScene": "You cannot link the Combat Encounter to a Scene that doesn't contain all its Combatants.",
   "ACTIONS": {
+    "EditName": "Edit Name",
+    "EditNameTitle": "Edit Combat Encounter Name",
     "LinkToScene": "Link to Viewed Scene",
     "UnlinkFromScene": "Unlink from Scene"
   },
   "FIELDS": {
+    "name": {
+      "label": "Combat Name",
+      "hint": "Provide a short name for this Combat Encounter which helps to identify it."
+    },
     "round": {
       "label": "Round"
     },
@@ -500,8 +503,10 @@
   "Unknown": "Unknown Combatant",
   "PanTo": "Pan to Combatant",
   "Ping": "Ping Token",
-  "ToggleVis": "Toggle Visibility",
-  "ToggleDead": "Mark Defeated",
+  "Hide": "Hide",
+  "Show": "Show",
+  "MarkDefeated": "Mark Defeated",
+  "UnmarkDefeated": "Unmark Defeated",
   "MovementHistoryCleared": "Cleared movement history for Token \"{name}\".",
   "WarnNonVisibleToken": "This Combatant is not visible to you.",
 
@@ -531,6 +536,7 @@
   "Confirm": "Confirm",
   "Default": "Default",
   "Delete": "Delete",
+  "FoundryVirtualTabletop": "Foundry Virtual Tabletop",
   "Invalid": "Invalid",
   "No": "No",
   "None": "None",
@@ -547,13 +553,13 @@
   "FilterDocuments": "Filter Documents by Type",
   "ClearFilters": "Clear Filters",
   "Delete": {
-    "Option": "Delete Compendium",
+    "Option": "Delete",
     "Title": "Delete Compendium: {compendium}",
     "Warning": "This Compendium Pack will be permanently deleted and cannot be recovered."
   },
   "DeleteEntry": "Delete Entry",
   "Duplicate": {
-    "Option": "Duplicate Compendium",
+    "Option": "Duplicate",
     "Title": "Duplicate Compendium: {compendium}",
     "Label": "New Compendium Title",
     "Hint": "You may duplicate this compendium into your World to have a local copy of its content which is safe to edit.",
@@ -568,6 +574,10 @@
     "Start": "Importing {number} {type} Documents and {folderNumber} Folders into the {folder} folder. Please be patient.",
     "Finish": "Successfully imported {number} {type} Documents and {folderNumber} Folders into the {folder} folder."
   },
+  "ImportFolder": {
+    "InvalidDocument": "You may not import a {type} Document into the folders collection of the {collection} Compendium.",
+    "InvalidDocuments": "You can only import Folder documents into the folders collection of the {collection} Compendium."
+  },
   "ImportEntry": "Import Entry",
   "Locked": "{title} [Locked]",
   "Migration": {
@@ -578,17 +588,20 @@
   "Type": "Document Type",
   "TypeHint": "Each Compendium pack contains a specific type of Document.",
   "ToggleLocked": {
-    "Option": "Toggle Edit Lock",
     "Title": "Toggle Edit Lock: {compendium}",
+    "Lock": "Lock",
     "Unlock": "Unlock",
     "Warning": "You are attempting to unlock for editing a compendium that does not belong to this World. Any changes you make in this compendium pack may be lost if the System or Module which owns it is updated. You may wish to duplicate the compendium to your World instead. How do you wish to proceed?"
   },
   "CannotViewWarning": "You do not have sufficient permission to view this Compendium pack.",
+  "ModifyLocked": "You cannot modify content in this Compendium pack because it is locked.",
+  "ModifyPermissionDenied": "You do not have permission to modify this Compendium pack.",
   "OwnershipInheritBelow": "Inherit from below",
   "OwnershipReset": "Reset to Default",
   "ART": {
     "CONFIG": {
-      "Hint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided by multiple sources, the one with the highest priority will be used.",
+      "Hint": "Use the arrows to adjust the priority of the art sources. When a single Document has art provided by multiple sources, the one with the highest priority will be used.",
+      "Items": "Items",
       "Portraits": "Portraits",
       "PriorityDecrease": "Decrease Priority",
       "PriorityIncrease": "Increase Priority",
@@ -1070,6 +1083,7 @@
   "StatusUpgrade": "Empowered",
   "Submit": "Submit Changes",
   "CHANGES": {
+    "Unregistered": "A change type of \"{type}\" is not registered.",
     "PHASES": {
       "initial": {
         "label": "Initial",
@@ -1213,7 +1227,7 @@
   "NoWebGL": "Your browser does not currently support WebGL rendering which is required by Foundry Virtual Tabletop. Ensure that you have hardware rendering and WebGL enabled in your browser.",
   "NoWebGL2": "Your browser does not currently support WebGL Version 2 rendering which is essential for Foundry Virtual Tabletop to work properly. Errors or abnormal graphical behavior may occur.",
   "BackgroundTextureSize": "You are using a Scene background texture with dimensions {width}px by {height}px. One or both of these dimensions exceeds the maximum texture size of {max}px supported by your device.",
-  "InvalidAdminKey": "The provided server administrator password is invalid. If you have forgotten your configured password you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
+  "InvalidAdminCredentials": "The provided server administrator username or password is invalid. If you have forgotten your configured credentials, you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
   "LoadPackages": "The request to browse existing packages failed to connect with the Foundry server. Make sure your application allows outbound connections.",
   "NoTargetUsersForWhisper": "No target users exist for this whisper. Check your spelling or try \"/w [User Name]\" instead.",
   "CantWhisper": "You do not have permission to send whispered chat messages to other users.",
@@ -1399,6 +1413,7 @@
   "TitleImageVideo": "Image or Video Browser",
   "TitleImage": "Image Browser",
   "TitleVideo": "Video Browser",
+  "TitleTexture": "Texture Browser",
   "TitleAudio": "Audio Browser",
   "TitleText": "Document Browser",
   "TitleGraphics": "3D Browser",
@@ -1443,6 +1458,7 @@
 "INVITATIONS.Copied": "Game invitation link copied to clipboard",
 "INVITATIONS.Instructions": "Share the below invitation links with users who you wish to have join your game. The local invitation link is for users on your local network while the internet link connects via internet on the configured port.",
 "INVITATIONS.Internet": "Internet",
+"INVITATIONS.InternetV6": "Internet (IPv6)",
 "INVITATIONS.Local": "Local Network",
 "INVITATIONS.Title": "Game Invitation Links",
 "INVITATIONS.OpenConnection": "Your connection appears to be open",
@@ -1457,6 +1473,7 @@
   "Empty": "Empty Slot",
   "ToggleSheet": "Display {document}",
   "ClearConfirm": "Clear all assigned Macros from your hotbar?",
+  "IsLocked": "You cannot take this action while the hotbar is locked.",
   "ACTIONS": {
     "Clear": "Clear Hotbar",
     "Mute": "Mute Volume",
@@ -1475,13 +1492,17 @@
   "OpenConfig": "Open Configuration",
   "AssignStatusEffects": "Assign Status Effects",
   "SelectMovementAction": "Select Movement Action",
-  "ToggleTargetState": "Toggle Target State",
-  "ToggleCombatState": "Toggle Combat State",
-  "ToggleVis": "Toggle Visibility State",
-  "ToggleLock": "Toggle Locked State",
-  "ToFrontOrBack": "Bring to Front / Send to Back",
-  "TilePlay": "Play Tile Video",
-  "TilePause": "Pause Tile Video",
+  "Target": "Target",
+  "Untarget": "Untarget",
+  "EnterCombat": "Enter Combat",
+  "ExitCombat": "Exit Combat",
+  "Hide": "Hide",
+  "Show": "Show",
+  "Lock": "Lock",
+  "Unlock": "Unlock",
+  "ToFrontOrBack": "To Front/Back",
+  "TilePlay": "Play Video",
+  "TilePause": "Pause Video",
   "WarningEffectNoActor": "You cannot assign status effects to a Token which has no associated Actor."
 },
 
@@ -1818,7 +1839,10 @@
 "MODMANAGE": {
   "Bugs": "Bug or Issue Reports",
   "DeactivateAll": "Deactivate All Modules",
-  "Readme": "Module Documentation",
+  "Readme": "Documentation",
+  "Author": "Author",
+  "Authors": "Authors",
+  "URL": "URL",
   "Title": "Module Management",
   "Instructions": "Use this form to configure which Modules are active within your current World. Submitting changes to active modules will cause the current session to reload.",
   "View": "The Modules listed below are currently active within this World.",
@@ -1911,8 +1935,6 @@
   "FPS": "FPS"
 },
 
-"PLAYLIST.Delete": "Delete Playlist",
-"PLAYLIST.Edit": "Edit Playlist",
 "PLAYLIST.DefaultChannel": "Playlist Audio Channel",
 "PLAYLIST.CurrentlyPlaying": "Currently Playing",
 "PLAYLIST.ModeDisabled": "Soundboard Only",
@@ -1929,7 +1951,7 @@
 "PLAYLIST.Update": "Update Playlist",
 "PLAYLIST.SortAlphabetical": "Alphabetical",
 "PLAYLIST.SortManual": "Manual",
-"PLAYLIST.SoundCreate": "Create Sound",
+"PLAYLIST.SoundAdd": "Add Sound",
 "PLAYLIST.SoundEdit": "Edit Sound",
 "PLAYLIST.SoundDelete": "Delete Sound",
 "PLAYLIST.SoundLoop": "Loop Sound",
@@ -1939,6 +1961,7 @@
 "PLAYLIST.SoundPreload": "Preload Sound",
 "PLAYLIST.SoundResume": "Resume Sound",
 "PLAYLIST.SoundStop": "Sound Stop",
+"PLAYLIST.Preload": "Preload Sounds",
 "PLAYLIST.BulkImport": {
   "Title": "Bulk Import Sounds",
   "Hint": "Select a folder containing the sounds to be imported.",
@@ -1960,7 +1983,8 @@
   "TOOLTIP": "Volume: {volume}%"
 },
 
-"PLAYLIST_SOUND.Update": "Update Track",
+"PLAYLIST_SOUND.Create": "Create Sound",
+"PLAYLIST_SOUND.Update": "Update Sound",
 "PLAYLIST_SOUND.FIELDS": {
   "name.label": "Track Name",
   "path.label": "Audio Source",
@@ -1979,7 +2003,6 @@
 "SCENE.BackgroundScale": "Scene Scale",
 "SCENE.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the scene scale.",
 "SCENE.CaptureInitialViewPosition": "Captured canvas position as initial view in the Scene configuration form.",
-"SCENE.Configure": "Configure",
 "SCENE.CurrentLevel": "Current Level",
 "SCENE.Darkness": "Darkness",
 "SCENE.Details": "Details",
@@ -2029,13 +2052,14 @@
 "SCENE.Loading": "Loading {name}",
 "SCENE.Notes": "Scene Notes",
 "SCENE.Perception": "Perception",
-"SCENE.Preload": "Preload Scene",
+"SCENE.Preload": "Preload",
 "SCENE.Presentation": "Presentation",
 "SCENE.Properties": "Scene Properties",
-"SCENE.View": "View Scene",
+"SCENE.View": "View",
 "SCENE.ShiftBG": "Shift",
+"SCENE.PullEveryone": "Pull Everyone",
 "SCENE.ToggleNav": "Toggle Navigation",
-"SCENE.FogModeChangeMessage": "Fog exploration mode has changed. This will reload fog exploration and reset vision.",
+"SCENE.FogModeChangeMessage": "Fog of War mode has changed. This will reload fog exploration and reset vision.",
 "SCENE.Transition": {
   "Animation": "Transition Animation",
   "Preview": "Preview",
@@ -2127,8 +2151,8 @@
       "hint" : "Controls Fog of War mode: \"None\" disables exploration (tokens only see what they currently can), \"Individual\" tracks exploration separately for each user, and \"Shared\" uses a single exploration state contributed to by all users."
     },
     "overlay": {
-      "label" : "Exploration Image",
-      "hint": "An optional fog of war image to be drawn above unexplored parts of the scene."
+      "label" : "Unexplored Image",
+      "hint": "An optional Fog of War image to be drawn above unexplored parts of the Scene. If Unexplored Color is configured, the image is drawn on top of it."
     },
     "colors": {
       "explored": {
@@ -2222,14 +2246,11 @@
 "SCENE_LEVEL": {
   "Actions": {
     "Add": {
-      "hint": "Scenes support more than one vertical level. Add a new level to convert this scene into a multi-level scene.",
+      "hint": "Scenes support more than one vertical level. Add a new Level to convert this Scene into a multi-level scene.",
       "label": "Add Level"
     },
-    "Down": "Down one level",
-    "Edit": "Edit level",
-    "Remove": "Remove level",
-    "Up": "Up one level",
-    "View": "View level"
+    "Edit": "Edit Level",
+    "Delete": "Delete Level"
   },
   "FIELDS": {
     "background": {
@@ -2254,9 +2275,8 @@
       "alphaThreshold.label": "Alpha Threshold"
     },
     "fog": {
-      "label": "Fog Exploration",
-      "src.label": "Unexplored Texture",
-      "tint.label": "Texture Tint"
+      "label": "Fog of War",
+      "src.label": "Unexplored Image"
     },
     "textures": {
       "label": "Positioning",
@@ -2279,13 +2299,19 @@
         "hint": "Configure the set of other Levels which are fully or partially visible from this one."
       }
     }
-  }
+  },
+  "CannotDeleteOnlyLevel": "You cannot delete the only Level in this Scene."
 },
 
 "SCENE_NAVIGATION": {
   "COLLAPSE": "Collapse Navigation",
   "EXPAND": "Expand Navigation",
-  "LABEL": "Scene Navigation"
+  "LABEL": "Scene Navigation",
+  "SCENE": {
+    "Viewing": "Viewing",
+    "Active": "Active",
+    "Hidden": "Hidden"
+  }
 },
 
 "GRID.STYLES":{
@@ -2304,6 +2330,16 @@
     "label": "Save Application Configuration",
     "warning": "Modifying these configuration options will require you to restart your server in order for them to take effect. Do you wish to continue?",
     "restart": "Foundry Virtual Tabletop application configuration settings have been changed. You must restart your server for the changes to take effect."
+  },
+  "SSL": {
+    "Content": {
+      "Warning": "A self-signed certificate is a convenient way to add SSL encryption to your Foundry Virtual Tabletop instance and will allow you to benefit from modern browser APIs, however browsers do not implicitly trust self-signed certificates and will display a prominent warning message when you or other players attempt to connect to your instance.",
+      "Ignore": "This warning is safe to ignore, and the connection will still be encrypted.",
+      "DoNotShare": "Take care that you do not share your generated <code>fvtt-key.pem</code> file with anyone.",
+      "Continue": "Would you like to proceed?"
+    },
+    "Title": "Generate Self-Signed Certificate",
+    "Tooltip": "Automatically (re-)generate SSL certificates & keys."
   },
   "SSLCert": "SSL Certificate",
   "Telemetry": {
@@ -2324,6 +2360,10 @@
     "OtherSettings": "Other Settings"
   },
   "FIELDS": {
+    "adminUsername": {
+      "label": "Administrator Username",
+      "hint": "An administrator username is used to protect access to this Setup and Configuration area of Foundry Virtual Tabletop. Configuring an administrator username is optional but encouraged."
+    },
     "adminPassword": {
       "label": "Administrator Password",
       "hint": "An administrator password is used to protect access to this Setup and Configuration area of Foundry Virtual Tabletop. It is strongly encouraged to set an administrator password for your server."
@@ -2389,7 +2429,7 @@
   }
 },
 
-"SETTINGS.CombatConfigL": "Encounter Tracker",
+"SETTINGS.CombatConfigL": "Combat Tracker",
 "SETTINGS.CombatConfigH": "Combat and Tracker related settings.",
 "SETTINGS.CombatThemeN": "Combat Theme",
 "SETTINGS.CombatThemeL": "The set of Sounds that will play when Combat begins, when your turn is next, and when it is your turn.",
@@ -2530,6 +2570,10 @@
         "hint": "Specify whether you prefer user interface elements to render using a light theme or a dark theme."
       }
     },
+    "chatBackground": {
+      "hint": "Display the chat log with a background rather than having chat cards overlay the canvas.",
+      "label": "Chat Background"
+    },
     "chatNotifications": {
       "label": "Chat Notifications",
       "hint": "Choose whether notifications of new chat messages appear as full chat cards, or only as a pip on the chat tab.",
@@ -2632,16 +2676,18 @@
   "FavoritePackage": "Favorite",
   "Verified": "Package is verified for this version of Foundry",
   "ErrorTimeout": "The request to {url} timed out after {timeout}s",
+  "GoBack": "Go Back",
+
+  "ShuttingDown": {
+    "Confirm": "Are you sure you want to shut down the server?",
+    "Title": "Shutting Down",
+    "Message": "The server is shutting down. It will need to be restarted to access again.",
+    "Unavailable": "The server is not yet available. Verify that it has been restarted, or try again in a few seconds."
+  },
 
   "WarningsTitle": "Package Warnings",
   "WarningsNone": "You have no warnings!",
   "WarningsManage": "Manage Package",
-
-  "ManifestUpdate": "Updated version available at new installation URL",
-  "ManifestUpdateAvailable": "A newer version of \"{package}\" is available at a different installation URL. This happens when the package hosting location or the author has changed.",
-  "PriorManifestUrl": "Prior Manifest URL (Version {version})",
-  "UpdatedManifestUrl": "Updated Manifest URL (Version {version})",
-  "SwapToTheUpdatedManifest": "Would you like to switch to the new manifest URL? (this is recommended)",
 
   "CurrentVersion": "Current Version",
   "ForceUpdate": "Force Update?",
@@ -2672,12 +2718,15 @@
   "PackageInstalled": "Installed",
   "PackageNotOwned": "Not Owned",
   "PackageName": "Package Name",
+  "PackageOwnershipUnknown": "Ownership Unknown",
+  "PackageOwnershipUnknownHint": "Your package entitlements could not be retrieved from foundryvtt.com, so it is not known whether you own this package.",
   "PackageProtected": "Protected",
   "PackageRequiresDowngradeHint": "You must downgrade to Foundry VTT version {vmax} in order to install this package.",
   "PackageRequiresDowngradeLabel": "Requires Downgrade",
   "PackageRequiresUpgradeHint": "You must upgrade to Foundry VTT version {vmin} in order to install this package.",
   "PackageRequiresUpgradeLabel": "Requires Upgrade",
   "PackageVisAll": "All Packages",
+  "PackageVisOwned": "Owned Packages",
   "PackageVisInst": "Installed",
   "PackageVisUnin": "Not Installed",
   "PackageVisCompatible": "Compatible",
@@ -2704,6 +2753,8 @@
   "PackageDependenciesCouldInstallSingular": "A dependency can be automatically installed.",
   "PackageDependenciesCouldInstallPlural": "{number} dependencies can be automatically installed.",
   "PackageDependenciesDecline": "You have chosen not to install the required dependency packages for {title}. You will need to install them manually.",
+  "PackageDependenciesUnavailable": "This world cannot be created because the following required dependencies are not available to install:",
+  "PackageDependencyUnlisted": "This package is unlisted.",
   "PackageDependenciesSuccess": "Successfully installed {title} and {number} dependencies.",
   "PackageUpdateCoreUpdateNeeded": "An update is available for {title} but cannot be installed because it requires the core software to be updated to at least {vmin}. You are currently using version {vcur}.",
   "PackageUpdateCoreUnstable": "An update is available for {title} but it may not be installed because it requires a core software version {vmin} which is not yet stable.",
@@ -2758,8 +2809,8 @@
   "UpdateCompleteAuto": "Update completed successfully. Restarting Foundry VTT application.",
   "UpdateNoInternetError": "Foundry Virtual Tabletop requires an active internet connection to update.",
   "UpdateWebsiteUnreachableError": "We cannot reach https://foundryvtt.com at this time, please try again later.",
+  "UpdateRequestRefusedError": "https://foundryvtt.com refused this update request. This is not a problem with your license key. Please try again later.",
   "UpdateWebsiteSlowWarning": "https://foundryvtt.com appears to be under heavy load at this time, we recommend you try again later.",
-  "UpdateWarningWillDisable": "This update is a new major version of the Foundry Virtual Tabletop software. Installing this update will require some installed modules which may not yet be compatible to be disabled.",
   "UpdateButtonDownload": "Download Update {display}",
   "UpdateInfoAvailable": "An update to Foundry Virtual Tabletop {display} is available!",
   "UpdateNotAvailable": "No software update is currently available on the requested update channel.",
@@ -2786,7 +2837,7 @@
 
   "AdminAccess": "Administrator Access Required",
   "AdminPasswordPrompt": "There is not currently an active game on this server. In order to access the setup menu you must provide the server administrator password.",
-  "AdminPasswordForgot": "If you have forgotten the administrator password, the server administrator can reset it by <a href='https://foundryvtt.com/article/reset-admin-password/' target='_blank'>following these instructions</a>.",
+  "AdminCredentialsForgot": "If you have forgotten the administrator username or password, the server administrator can reset it by <a href=\"https://foundryvtt.com/article/reset-admin-password/\" target=\"_blank\">following these instructions</a>.",
   "AdminLogIn": "Log In",
   "AdminLogout": "Admin Log Out",
 
@@ -2800,11 +2851,15 @@
     "Configure": "Configure",
     "Logout": "Log Out",
     "Update": "Update",
-    "Warnings": "Warnings"
+    "Warnings": "Warnings",
+    "ShutDownServer": "Shut Down"
   },
 
   "BACKUPS": {
     "Backup": "Backup",
+    "BackupBeforeRestore": "Back Up Current State",
+    "BackupBeforeRestoreHint": "Take a backup of the package as it is now, so that this restoration can itself be rolled back.",
+    "BackupBeforeRestoreNote": "Automatic Pre-Restore Backup",
     "BackingUp": "Backup In Progress",
     "BulkActions": "Bulk Actions",
     "Extracting": "Extracting Backup",
@@ -2852,7 +2907,8 @@
     "Restoring": "Backup Restoration In Progress",
     "RestoreLatest": "Restore Latest",
     "RestoreLatestBackup": "Restore Latest Backup",
-    "RestoreBackupWarning": "Restoring a backup will erase the current state of the package. This action cannot be reversed. Do you want to continue?",
+    "RestoreBackupWarning": "Restoring a backup will erase the current state of the package. Unless you choose to back up by checking the box below, this action cannot be reversed. Do you want to continue?",
+    "RestoreBackupWarningNoBackups": "Restoring a backup will erase the current state of the package. This action cannot be reversed. Do you want to continue?",
     "RestoreBackupTitle": "Restoring backup for {title}",
     "RestoreBackupFailure": "Failed to restore backup for {title}. See the console (F12) for details.",
     "RestoreBackupComplete": "Successfully restored {title} with backup taken on {date}",
@@ -2922,6 +2978,20 @@
     },
     "ManifestWrongPackageType": "The provided URL does not appear to point to a {packageType}."
   },
+  "PROVIDER_FILTER": {
+    "Label": "Providers",
+    "Placeholder": "Search Providers"
+  },
+  "SYSTEM_FILTER": {
+    "Label": "Systems",
+    "Systems": "Requires System",
+    "RequiresN": "{count} Systems",
+    "MODES": {
+      "installed": "Available for Installed Systems",
+      "none": "No Restriction",
+      "specific": "Requires Specific System"
+    }
+  },
   "UPDATE_NOTES": {
     "Title": "Release Notes: {release}",
     "FullList": "See the <a href=\"{url}\" target=\"_blank\">full list</a> of Release Notes.",
@@ -2949,6 +3019,30 @@
   "Compatibility": {
     "Label": "Compatibility",
     "Hint": "You may optionally indicate that this package is compatible only with a range of Foundry Virtual Tabletop software versions. Compatibility can be declared for a specific build version like \"13.339\" or for a broad generation like \"13\"."
+  },
+  "TAGS": {
+    "adventures": "Adventures",
+    "ai-content": "Contains AI Content",
+    "ai-tools": "AI Tools",
+    "analytics": "Analytics and Tracking",
+    "archived": "Archived",
+    "audio": "Audio Improvements",
+    "automation": "Automation Enhancers",
+    "chat": "Chat Log and Messaging",
+    "combat": "Combat Enhancements",
+    "content": "Content Packs",
+    "dice": "Dice Rolling",
+    "importer": "Content Importers",
+    "integration": "External Integrations",
+    "journal": "Journals and Notes",
+    "overhaul": "Overhauls or Feature Suites",
+    "paid-features": "Contains Paid Features",
+    "patches": "Patches or Bug Fixes",
+    "sheets": "Actor and Item Sheets",
+    "tools": "Tools and Controls",
+    "translation": "Translation and Localization",
+    "visuals": "Visual Effects",
+    "zero-ai": "Contains Zero AI"
   },
   "TagJavaScript": "JavaScript",
   "TagCSS": "CSS",
@@ -3094,9 +3188,10 @@
   "NextSession": "Next Session",
   "SelectUser": "Select User",
   "UserKey": "User Password",
-  "AuthAdmin": "You are authenticated as a server administrator user.",
+  "AuthAdmin": "You are authenticated as a server administrator.",
+  "AuthRequired": "You will be required to authenticate as a server administrator.",
   "ErrorMustSelectUser": "You must select a User in order to log in.",
-  "ErrorUserDoesNotExist": "The requested User, \"{user}\", does not exist!",
+  "ErrorUserDoesNotExist": "The requested User, \"{user}\", does not exist.",
   "ErrorInvalidPassword": "Invalid password provided for {user}!",
   "ErrorBanned": "{user} does not have permission to access this World!",
   "LoginSuccess": "Login as {user} successful, joining game!",
@@ -3246,10 +3341,11 @@
 
 "PLACEABLE_PALETTE": {
   "Apply": "Apply",
+  "CannotApplyToLocked": "You cannot apply the palette to locked objects.",
   "CloneSettings": "Clone",
   "MultipleValues": "<Multiple Values>",
-  "Selected": "{document} Palette [{count}]",
-  "Title": "{document} Palette"
+  "Selected": "{document} Palette: Edit [{count}]",
+  "Title": "{document} Palette: Preset"
 },
 
 "REGION": {
@@ -3282,6 +3378,10 @@
       "top": {
         "label": "Top",
         "hint": "The top of the elevation range."
+      },
+      "topInclusive": {
+        "label": "Top Inclusive",
+        "hint": "Is the top included in the elevation range?"
       }
     },
     "attachment": {
@@ -3319,7 +3419,7 @@
     "create": "Create Region",
     "update": "Update Region",
     "delete": "Delete Region",
-    "behaviorCreate": "Create Behavior",
+    "behaviorAdd": "Add Behavior",
     "behaviorEdit": "Edit Behavior",
     "behaviorDelete": "Delete Behavior",
     "behaviorEnable": "Enable Behavior",
@@ -3429,7 +3529,6 @@
   },
   "NOTIFICATIONS": {
     "PlacedRegionRotationNotAllowed": "You are not allowed to rotate the shape of the placed Region.",
-    "PlacedRegionNotAttachedToToken": "The placed Region must be attached to a Token.",
     "CopiedShape": "Copied Region shape.",
     "CutShape": "Cut Region shape.",
     "PastedShape": "Pasted Region shape.",
@@ -3510,11 +3609,21 @@
       }
     },
     "changeLevel": {
+      "FIELDS": {
+        "movementActions": {
+          "label": "Allowed Movement Actions",
+          "hint": "Defines which movement actions the Token can use to change the Level. If no actions are selected, all movement actions are allowed."
+        }
+      },
+      "Level": "Destination Level",
+      "MovementAction": "Movement Action",
       "Confirm": "Do you want to move {token} to {level}?",
       "ConfirmSelect": "Select the level you want to move {token} to.",
+      "ConfirmDisabled": "{token} cannot be moved to another level from their current position.",
       "Move": "Move",
       "MoveDown": "Move Down",
-      "MoveUp": "Move Up"
+      "MoveUp": "Move Up",
+      "DoNotMove": "Don't Move"
     },
     "defineSurface": {
       "FIELDS": {
@@ -3525,11 +3634,15 @@
         "sound.label": "Restricts Sound",
         "occlusion": {
           "label": "Occlusion",
-          "hint": "When an occludable Token is beneath the surface, Tiles with occlusion mode set to SURFACE, and any foreground or background Level textures at the same elevation or higher, will be occluded."
+          "hint": "When a controlled or detected Token is below a surface, Tiles using the \"Surface\" occlusion mode fade if they are at or above that surface, as do background and foreground textures. For surfaces at the top of a three-dimensional Region, fading only applies if the Token is also at or above the Region's bottom elevation. Hovering over the Region or pressing the \"Highlight Objects\" keybinding also triggers this effect."
         },
         "exposure": {
           "label": "Reveal Elevated Surface",
           "hint": "Partially reveal the visible area of this elevated surface to observers below and outside of it. The revealed area depends on the angle between the observer and the surface boundary, this area decreases as the angle becomes steeper. This option is useful for roofs, balconies, or other overhead platforms."
+        },
+        "culling": {
+          "label": "Cull Tokens",
+          "hint": "Hide uncontrolled Tokens outside the currently viewed Level in the GM view or when Token Vision is disabled. Surfaces in the background hide Tokens below them, while surfaces in the foreground hide Tokens on or above them."
         }
       },
       "PLACEMENTS": {
@@ -3637,10 +3750,13 @@
         "relative.label": "Relative"
       },
       "Confirm": "Do you want to teleport {token}?",
+      "ConfirmDisabled": "{token} cannot be teleported from their current position.",
       "ConfirmRevealed": "Do you want to teleport {token} to {region} in {scene}?",
       "ConfirmSelectSameScene": "Select the destination in {scene} you want to teleport {token} to.",
       "ConfirmSelectDifferentScene": "Select the destination you want to teleport {token} to.",
-      "ConfirmSelectOption": "{region} in {scene}"
+      "ConfirmSelectOption": "{region} in {scene}",
+      "Teleport": "Teleport",
+      "DoNotTeleport": "Don't Teleport"
     },
     "toggleBehavior": {
       "FIELDS": {
@@ -3667,7 +3783,7 @@
 "SIDEBAR.TabJournal": "Journal",
 "SIDEBAR.TabCompendium": "Compendium Packs",
 "SIDEBAR.TabPlaceables": "Placeables",
-"SIDEBAR.TabSettings": "Game Settings",
+"SIDEBAR.TabSettings": "Settings",
 "SIDEBAR.TabTables": "Rollable Tables",
 "SIDEBAR.TokenArt": "View Token Artwork",
 "SIDEBAR.SearchModeName": "Search by Name only",
@@ -3679,6 +3795,7 @@
 "SIDEBAR.CollapseToggle": "Collapse or Expand",
 "SIDEBAR.Delete": "Delete",
 "SIDEBAR.DeleteWarning": "This {type} will be permanently deleted and cannot be recovered.",
+"SIDEBAR.DeleteManyWarning": "{count} {type} will be permanently deleted and cannot be recovered.",
 "SIDEBAR.Duplicate": "Duplicate",
 "SIDEBAR.Edit": "Edit",
 "SIDEBAR.Export": "Export Data",
@@ -3712,9 +3829,6 @@
   "ACTIONS": {
     "ChangeLevel": "Change Level",
     "Clear": "Clear",
-    "Configure": "Configure",
-    "Create": "Create {name}",
-    "Delete": "Delete",
     "Hidden": "Hidden",
     "Hide": "Hide",
     "InLevel": "Included in Level",
@@ -3744,7 +3858,8 @@
     "Title": "Advanced Filter",
     "Level": "Filter by Level",
     "Tooltip": "Advanced Filters. Right-click to clear.",
-    "Top": "Top"
+    "Top": "Top",
+    "Viewed": "Viewed Only"
   },
   "Search": {
     "placeholder": "Filter {name}"
@@ -3757,7 +3872,8 @@
     "normal": "Normal Walls",
     "secret": "Secret Doors",
     "terrain": "Terrain Walls",
-    "window": "Windows"
+    "window": "Windows",
+    "blank": "Blank Walls"
   }
 },
 
@@ -3834,7 +3950,9 @@
   "AnimateSettingHint": "Display a roulette-style animation when drawing from a Roll Table.",
   "DrawFlavor": "Draws a result from the {name} table",
   "DrawFlavorPlural": "Draws {number} results from the {name} table",
+  "DrawMaximumIterations": "Failed to draw an available entry from Table {name}, maximum iteration reached.",
   "NoAvailableResults": "There are no available results which can be drawn from this table.",
+  "NoPossibleResults": "No results can possibly be drawn from this table and formula.",
   "Result": "Result",
   "ResultDescription": "Result Description",
   "SHEETS": {
@@ -4016,12 +4134,16 @@
 "TOKEN.AssignSuccess": "Updated prototype Token configuration for {name}",
 "TOKEN.BarAttributes": "Attribute Bars",
 "TOKEN.BarValues": "Single Values",
-"TOKEN.DeleteCombatantWarning": "You are deleting a Token that is in Combat. Its Combatant will be permanently deleted.",
+"TOKEN.DeleteCombatantWarning": "You are deleting a Token that is in combat. Its Combatant will be permanently deleted.",
 "TOKEN.DeleteAttachedRegionWarning": "You are deleting a Token that has a Region attached to it. Its attached Region(s) will be permanently deleted.",
 "TOKEN.Size": "Size",
 "TOKEN.Anchor": "Anchor",
 "TOKEN.AnchorHint": "The default anchor (0.5, 0.5) is the center of the Token image.",
 "TOKEN.ImageAlts": "Alternate Actor Tokens",
+"TOKEN.ImageCycleNext": "Next Token Image",
+"TOKEN.ImageCyclePrev": "Previous Token Image",
+"TOKEN.ImagePreview": "Token Image Preview",
+"TOKEN.ImagePathOverridden": "This image is overridden by the Dynamic Token Ring subject texture.",
 "TOKEN.Mirror": "Mirror Image",
 "TOKEN.MirrorX": "Horizontally",
 "TOKEN.MirrorY": "Vertically",
@@ -4057,6 +4179,7 @@
   "depth.label": "Z-Size",
   "level.label": "Level",
   "movementAction.label": "Movement Action",
+  "movementAction.hint": "When Default is selected, the movement action is automatically determined for this Token.",
   "actorId.label": "Represented Actor",
   "actorLink.label": "Link Actor Data",
   "displayName.label": "Display Name",
@@ -4769,7 +4892,7 @@
         "hole.label": "Is Hole",
         "gridBased": {
           "label": "Is Grid-Based",
-          "hint": "A grid-based shape is conforming to the grid's metric."
+          "hint": "A grid-based shape follows the grid's distance rules, as defined by the Grid Diagonals game setting."
         },
         "x.label": "X-Origin",
         "y.label": "Y-Origin",
